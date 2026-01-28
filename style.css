@@ -1,0 +1,252 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ @font-face {
+     font-family: "JelenaLoncaric";
+     src: url("JelenaLoncaric.ttf");
+ }
+
+ .oswald {
+     font-family: "Oswald", sans-serif;
+     font-optical-sizing: auto;
+     font-style: normal;
+ }
+
+ body {
+     font-family: "Oswald", sans-serif;
+     font-weight: 400;
+     line-height: 1.6;
+     color: #000000;
+     min-height: 100vh;
+     background-color: #f9f9f9;
+ }
+
+ .background-image {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-image: url('slike/pozadina.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     z-index: -1;
+ }
+
+ nav {
+     background-color: rgba(222, 2, 119, 0.95);
+     padding: 1rem 0;
+     box-shadow: 0 4px 12px rgba(126, 3, 64, 0.434);
+ }
+
+ .nav-list {
+     display: flex;
+     justify-content: center;
+     list-style: none;
+ }
+
+ .nav-list li {
+     margin: 0 2rem;
+ }
+
+ .nav-list a {
+     color: white;
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 1.1rem;
+     padding: 0.5rem 1.2rem;
+     border-radius: 4px;
+     transition: all 0.3s ease;
+     position: relative;
+ }
+
+ .nav-list a:hover {
+     background-color: rgba(255, 255, 255, 0.15);
+     transform: translateY(-2px);
+ }
+
+ .nav-list a::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 0;
+     height: 2px;
+     background-color: #510240;
+     transition: width 0.3s ease;
+ }
+
+ .nav-list a:hover::after {
+     width: 80%;
+ }
+
+ .container {
+     width: 1200px;
+     margin: 0 auto;
+     padding: 3rem 0;
+ }
+
+ .content {
+     background-color: rgba(255, 255, 255, 0.45);
+     border-radius: 12px;
+     padding: 3.5rem;
+     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+     width: 900px;
+     margin: 0 auto;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .h1-pocetna {
+     font-family: "JelenaLoncaric";
+     /* Font iz prve vježbe */
+     font-size: 3.8rem;
+     color: #510240;
+     text-align: center;
+     margin-bottom: 0.5rem;
+     letter-spacing: 1px;
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+ }
+
+ h1 {
+     font-size: 3.8rem;
+     color: #510240;
+     text-align: center;
+     margin-bottom: 0.5rem;
+     letter-spacing: 1px;
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+ }
+
+ h2 {
+     font-size: 1.8rem;
+     color: rgba(222, 2, 119, 0.95);
+     text-align: center;
+     margin-bottom: 2.5rem;
+     font-weight: 500;
+     letter-spacing: 0.5px;
+ }
+
+ .tekst {
+     font-size: 1.25rem;
+     line-height: 1.8;
+     color: #000000;
+     margin-bottom: 2rem;
+     text-align: justify;
+ }
+
+
+ .span-pocetna {
+     color: rgba(222, 2, 119, 0.95);
+     font-weight: 600;
+     background-color: rgba(175, 76, 150, 0.1);
+     padding: 0.2rem 0.5rem;
+     border-radius: 3px;
+ }
+
+ .divider {
+     height: 3px;
+     width: 150px;
+     background: linear-gradient(to right, rgba(222, 2, 119, 0.95), #510240);
+     margin: 1.5rem auto 2.5rem;
+     border-radius: 2px;
+ }
+
+ /*galerija*/
+
+ .galerija {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .galerija img {
+     width: 170px;
+     height: 300px;
+ }
+
+ .galerija img:hover {
+     border: #510240 5px solid;
+ }
+
+ .illustrator {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .illustrator p {
+     text-align: center;
+ }
+
+ .projektni {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .il-img1 {
+     padding: 2em;
+ }
+
+ .il-img2 {
+     padding: 2em;
+ }
+
+ .il-img3 {
+     padding: 2em;
+ }
+
+ .pro-img1 {
+     padding: 4em;
+ }
+
+ .photoshop {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .photoshop p {
+     text-align: center;
+ }
+
+ .ph-img1 {
+     padding: 2em;
+ }
+
+ .ph-img2 {
+     padding: 2em;
+ }
+
+ .ph-img3 {
+     padding: 2em;
+ }
+
+ .pro-img2 {
+     padding: 4em;
+ }
+
+ .premiere {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .premiere p{
+    text-align: center;
+ }
+
+ .poravnanje-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .moj-video{
+    padding: 10px;
+ }
